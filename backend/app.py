@@ -162,6 +162,12 @@ def ask():
     except Exception as e:
         error_message = f"An error occurred: {str(e)}"
         return jsonify({'error': error_message}), 500
+    
+    
+@app.route('/')
+def home():
+    return "Welcome to Dominik's AI Assistant Backend"
+
 
 
 if __name__ == '__main__':
