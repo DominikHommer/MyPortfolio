@@ -1,10 +1,20 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import os
 from random import choice
 from backend.chatbot.llama_client import LlamaClient
 
 from dotenv import load_dotenv
+
+app = Flask(__name__, static_folder='../frontend/build', static_url_path='/')
+
+@app.route('/')
+def serve():
+    return send_from_directory(app.static_folder, 'index.html')
+
+@app.errorhandler(404)
+def not_found(e):
+    return send_from_directory(app.static_folder, 'index.html')
 
 
 load_dotenv()
@@ -163,10 +173,7 @@ def ask():
         error_message = f"An error occurred: {str(e)}"
         return jsonify({'error': error_message}), 500
     
-    
-@app.route('/')
-def home():
-    return "Welcome to Dominik's AI Assistant Backend"
+
 
 
 
