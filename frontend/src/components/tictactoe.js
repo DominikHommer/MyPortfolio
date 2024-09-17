@@ -17,7 +17,7 @@ export function TicTacToe() {
     setIsUserTurn(false);
 
     setTimeout(() => {
-      axios.post(`http://127.0.0.1:5000/tictactoe/make_move/${difficulty}`, { board: newBoard })
+      axios.post(`https://dominikhommer-38eb5eaaef1a.herokuapp.com/tictactoe/make_move/${difficulty}`, { board: newBoard })
         .then(response => {
           const data = response.data;
           const aiMove = data.move;

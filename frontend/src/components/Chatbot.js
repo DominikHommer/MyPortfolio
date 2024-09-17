@@ -28,7 +28,7 @@ function Chatbot() {
       setLoading(true);
 
       try {
-        const res = await axios.post('http://127.0.0.1:5000/ask', { question });
+        const res = await axios.post('https://dominikhommer-38eb5eaaef1a.herokuapp.com/ask', { question });
         setMessages((prevMessages) => [
           ...prevMessages,
           { text: res.data.answer, sender: 'bot' }
@@ -43,7 +43,7 @@ function Chatbot() {
 
   const handleClearConversation = async () => {
     try {
-      await axios.post('http://127.0.0.1:5000/reset');
+      await axios.post('https://dominikhommer-38eb5eaaef1a.herokuapp.com/reset');
       setMessages([]);
     } catch (error) {
       console.error('Error resetting chat history:', error);
