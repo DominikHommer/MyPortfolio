@@ -1,0 +1,215 @@
+/* Styling für die Timeline */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 800px;
+    color: #333;
+}
+
+/* Vertikale Linie in der Mitte */
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #9F87C1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Timeline-Items */
+.timeline-item {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+
+/* Hover-Effekt: Text vergrößern */
+.timeline-item:hover h3 {
+    font-size: 120%; /* Vergrößert die Schrift */
+}
+
+.timeline-item:hover span,
+.timeline-item:hover p {
+    font-weight: bolder; /* Text wird fett beim Hover */
+}
+
+/* Punkt Hover-Effekt (jetzt auch explizit für die Punkte links und rechts) */
+.timeline-item:nth-child(odd)::before,
+.timeline-item:nth-child(even)::before {
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transition für die Punkte */
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #9F87C1;
+    top: 20px;
+    left: 100%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+.timeline-item:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #9F87C1;
+    top: 20px;
+    left: 0;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item:hover:nth-child(odd)::before,
+.timeline-item:hover:nth-child(even)::before {
+    transform: translateX(-50%) scale(1.5);
+    background-color: #9F87C1;
+}
+
+.timeline-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #9290C3;
+}
+
+.timeline-item span {
+    display: block;
+    font-size: 0.9em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.5;
+    color: white;
+}
+
+
+.education-timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 800px;
+    color: #333;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #86d8f2;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.education-timeline .timeline-item {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    transition: all 0.3s ease; 
+}
+
+
+.education-timeline .timeline-item:hover h3 {
+    font-size: 120%; 
+}
+
+.education-timeline .timeline-item:hover span,
+.education-timeline .timeline-item:hover p {
+    font-weight: bolder; 
+}
+
+.education-timeline .timeline-item:nth-child(odd)::before,
+.education-timeline .timeline-item:nth-child(even)::before {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.education-timeline .timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.education-timeline .timeline-item:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #86d8f2;
+    top: 20px;
+    left: 100%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.education-timeline .timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+.education-timeline .timeline-item:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #86d8f2;
+    top: 20px;
+    left: 0;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.education-timeline .timeline-item:hover:nth-child(odd)::before,
+.education-timeline .timeline-item:hover:nth-child(even)::before {
+    transform: translateX(-50%) scale(1.5);
+    background-color: #86d8f2;
+}
+
+.education-timeline .timeline-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #9290C3;
+}
+
+.education-timeline .timeline-item span {
+    display: block;
+    font-size: 0.9em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.education-timeline .timeline-item p {
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.5;
+    color: white;
+}
+
+

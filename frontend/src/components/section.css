@@ -1,0 +1,159 @@
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    flex-direction: row;
+}
+
+.section[data-aos] {
+    opacity: 1;
+}
+
+.section .section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.section .section-title {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.section .section-text {
+    flex: 2;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #9290C3;
+}
+
+.section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white;
+}
+
+.section.reverse .section-content {
+    flex-direction: row-reverse;
+}
+
+.section .game {
+    width: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.section .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.status {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #6c86bf;
+}
+  
+.winner-status {
+    font-weight: bold;
+}
+
+.board .square {
+    width: 100px;
+    height: 100px;
+    font-size: 4em !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.difficulty-select {
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+.difficulty-select label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 10px;
+    color: #6c86bf;
+}
+  
+.difficulty-select select {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    background-color: rgba(83, 92, 145, 0.2);
+    color: #ffffff;
+    transition: all 0.3s ease;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.difficulty-select select:hover,
+.difficulty-select select:focus {
+    border-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(83, 92, 145, 0.3);
+}
+
+.difficulty-select select:active {
+    border-color: #333;
+}
+
+.square .winner {
+    color: #84b6e5;
+    font-weight: bold;
+    animation: text-highlight 1s ease-in-out 2;
+}
+  
+@keyframes text-highlight {
+    0% {
+      transform: scale(1);
+      color: black;
+    }
+    50% {
+      color: #84b6e5;
+    }
+    100% {
+      transform: scale(1);
+      color: black;
+    }
+}
+
+.reset-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: transparent;
+    color: #6c86bf;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+  
+.reset-button:hover {
+    color: #558dc1;
+}

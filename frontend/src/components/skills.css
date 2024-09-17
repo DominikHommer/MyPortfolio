@@ -1,0 +1,36 @@
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2em;
+    justify-content: center;
+}
+
+.skill-item:hover .skill-icon,
+.skill-item:hover a {
+    color: #86d8f2;
+}
+
+.skill-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    transition: color 0.3s ease;
+}
+
+.skill-item a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
