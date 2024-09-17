@@ -2,7 +2,8 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
 from random import choice
-from chatbot.llama_client import LlamaClient
+from backend.chatbot.llama_client import LlamaClient
+
 from dotenv import load_dotenv
 
 
