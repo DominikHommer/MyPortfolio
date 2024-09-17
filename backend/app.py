@@ -19,7 +19,6 @@ def not_found(e):
 
 load_dotenv()
 
-app = Flask(__name__)
 CORS(app) 
 
 llama_client = LlamaClient(
