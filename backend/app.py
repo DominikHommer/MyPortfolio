@@ -105,7 +105,7 @@ def find_best_move_hard(board):
     return best_move
 
 
-@app.route('https://dominikhommer-38eb5eaaef1a.herokuapp.com/tictactoe/make_move/<difficulty>', methods=['POST'])
+@app.route('/tictactoe/make_move/<difficulty>', methods=['POST'])
 def make_move_with_difficulty(difficulty):
     data = request.json
     board = data.get('board')
@@ -140,13 +140,13 @@ def make_move_with_difficulty(difficulty):
     return jsonify(response)
 
 
-@app.route('https://dominikhommer-38eb5eaaef1a.herokuapp.com/reset', methods=['POST'])
+@app.route('/reset', methods=['POST'])
 def reset_chat():
     llama_client.reset_chat_history()
     return jsonify({'message': 'Chat history reset successfully'}), 200
 
 
-@app.route('https://dominikhommer-38eb5eaaef1a.herokuapp.com/ask', methods=['POST'])
+@app.route('/ask', methods=['POST'])
 def ask():
     data = request.json
     user_input = data.get('question')
