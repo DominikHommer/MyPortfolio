@@ -226,3 +226,16 @@
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
+
+
+/* Positioning for the 'Powered by Llama' text */
+.powered-by-llama {
+  font-size: 8px;
+  color: gray;
+  text-align: left;
+  position: absolute;
+  bottom: 2px;
+  right: 300px;
+  opacity: 0.6;
+  z-index: 5;
+}

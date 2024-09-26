@@ -97,6 +97,11 @@ function Chatbot() {
               <FontAwesomeIcon icon={faChevronUp} />
             </button>
           </form>
+
+
+          <div className="powered-by-llama">
+            Build with Meta Llama3
+          </div>
         </div>
       )}
     </div>
