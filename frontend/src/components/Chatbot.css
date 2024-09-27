@@ -227,20 +227,18 @@
   border-color: #555 transparent transparent transparent;
 }
 
-/* Positioning for the 'Powered by Llama' text */
 .powered-by-llama {
   font-size: 8px;
   color: gray;
   text-align: left;
   position: absolute;
-  bottom: 1px; /* Platzierung 10px vom unteren Rand */
-  left: 10px; /* Platzierung 10px vom linken Rand */
+  bottom: 1px; 
+  left: 10px; 
   opacity: 0.6;
   z-index: 5;
 }
 
 
-/* Responsive styling for chatbot */
 @media (max-width: 768px) {
   .chatbot-container {
     bottom: 20px;

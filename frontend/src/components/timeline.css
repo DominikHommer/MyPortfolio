@@ -1,4 +1,4 @@
-/* Styling für die Timeline */
+
 .timeline, .education-timeline {
     position: relative;
     margin: 0 auto;
@@ -7,24 +7,22 @@
     color: #333;
 }
 
-/* Vertikale Linie in der Mitte */
+
 .timeline::before, .education-timeline::before {
     content: '';
     position: absolute;
     width: 2px;
-    background-color: #9F87C1; /* For timeline */
+    background-color: #9F87C1; 
     top: 0;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 }
 
-/* Education timeline */
 .education-timeline::before {
     background-color: #86d8f2;
 }
 
-/* Timeline-Items */
 .timeline-item, .education-timeline .timeline-item {
     padding: 20px 40px;
     position: relative;
@@ -33,7 +31,6 @@
     transition: all 0.3s ease;
 }
 
-/* Punkt Hover-Effekt */
 .timeline-item:nth-child(odd)::before,
 .timeline-item:nth-child(even)::before,
 .education-timeline .timeline-item:nth-child(odd)::before,
@@ -85,7 +82,6 @@
     background-color: #86d8f2;
 }
 
-/* Punkt Hover und Animation */
 .timeline-item:hover:nth-child(odd)::before,
 .timeline-item:hover:nth-child(even)::before,
 .education-timeline .timeline-item:hover:nth-child(odd)::before,
@@ -119,10 +115,9 @@
     color: white;
 }
 
-/* Responsive Timeline Adjustments */
 @media (max-width: 768px) {
     .timeline::before, .education-timeline::before {
-        left: 26px; /* Adjust the vertical line to be more centered with the points */
+        left: 26px; 
     }
 
     .timeline-item, .education-timeline .timeline-item {
@@ -139,17 +134,16 @@
 
     .timeline-item:nth-child(odd)::before, .timeline-item:nth-child(even)::before,
     .education-timeline .timeline-item:nth-child(odd)::before, .education-timeline .timeline-item:nth-child(even)::before {
-        left: 20px; /* Move the point closer to the line */
+        left: 20px; 
         top: 20px;
-        transform: translateX(0); /* Prevent extra translation on mobile */
+        transform: translateX(0); 
     }
 
-    /* Adjust animation for hover on smaller screens */
     .timeline-item:hover:nth-child(odd)::before,
     .timeline-item:hover:nth-child(even)::before,
     .education-timeline .timeline-item:hover:nth-child(odd)::before,
     .education-timeline .timeline-item:hover:nth-child(even)::before {
-        transform: scale(1.5) translateX(0); /* Scale without shifting position */
+        transform: scale(1.5) translateX(0);
     }
 }
 
@@ -168,15 +162,14 @@
 
     .timeline-item:nth-child(odd)::before, .timeline-item:nth-child(even)::before,
     .education-timeline .timeline-item:nth-child(odd)::before, .education-timeline .timeline-item:nth-child(even)::before {
-        left: 20px; /* Further adjust for small screens */
+        left: 20px; 
     }
 
-    /* Adjust animation for smaller screens */
     .timeline-item:hover:nth-child(odd)::before,
     .timeline-item:hover:nth-child(even)::before,
     .education-timeline .timeline-item:hover:nth-child(odd)::before,
     .education-timeline .timeline-item:hover:nth-child(even)::before {
-        transform: scale(1.5) translateX(0); /* Keep the point centered during hover */
+        transform: scale(1.5) translateX(0);
     }
 }
 

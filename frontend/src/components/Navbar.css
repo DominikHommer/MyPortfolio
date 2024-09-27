@@ -48,11 +48,11 @@
         top: 60px;
         left: 0;
         right: 0;
-        display: none; /* Initially hidden */
+        display: none;
     }
 
     .navbar ul.show {
-        display: flex; /* Show when toggle is active */
+        display: flex; 
     }
 
     .navbar ul li {
