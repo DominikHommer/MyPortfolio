@@ -1,3 +1,4 @@
+/* General section styling */
 .section {
     min-height: 100vh;
     display: flex;
@@ -48,6 +49,7 @@
     flex-direction: row-reverse;
 }
 
+/* Styling for TicTacToe */
 .section .game {
     width: auto;
     margin: 0 auto;
@@ -68,7 +70,7 @@
     margin-bottom: 20px;
     color: #6c86bf;
 }
-  
+
 .winner-status {
     font-weight: bold;
 }
@@ -86,19 +88,39 @@
     cursor: pointer;
 }
 
+.square .winner {
+    color: #84b6e5;
+    font-weight: bold;
+    animation: text-highlight 1s ease-in-out 2;
+}
+
+@keyframes text-highlight {
+    0% {
+        transform: scale(1);
+        color: black;
+    }
+    50% {
+        color: #84b6e5;
+    }
+    100% {
+        transform: scale(1);
+        color: black;
+    }
+}
+
 .difficulty-select {
     padding: 20px;
     margin-bottom: 20px;
     text-align: center;
 }
-  
+
 .difficulty-select label {
     font-size: 1rem;
     font-weight: 500;
     margin-right: 10px;
     color: #6c86bf;
 }
-  
+
 .difficulty-select select {
     padding: 8px 12px;
     font-size: 1rem;
@@ -122,26 +144,6 @@
     border-color: #333;
 }
 
-.square .winner {
-    color: #84b6e5;
-    font-weight: bold;
-    animation: text-highlight 1s ease-in-out 2;
-}
-  
-@keyframes text-highlight {
-    0% {
-      transform: scale(1);
-      color: black;
-    }
-    50% {
-      color: #84b6e5;
-    }
-    100% {
-      transform: scale(1);
-      color: black;
-    }
-}
-
 .reset-button {
     padding: 10px 20px;
     font-size: 1rem;
@@ -153,7 +155,244 @@
     margin-top: 20px;
     transition: background-color 0.3s ease;
 }
-  
+
 .reset-button:hover {
     color: #558dc1;
 }
+
+/* Timeline Styling */
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 800px;
+    color: #333;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #9F87C1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover h3 {
+    font-size: 120%;
+}
+
+.timeline-item:hover span,
+.timeline-item:hover p {
+    font-weight: bolder;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #9F87C1;
+    top: 20px;
+    left: 100%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+.timeline-item:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #9F87C1;
+    top: 20px;
+    left: 0;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item:hover:nth-child(odd)::before,
+.timeline-item:hover:nth-child(even)::before {
+    transform: translateX(-50%) scale(1.5);
+    background-color: #9F87C1;
+}
+
+.timeline-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #9290C3;
+}
+
+.timeline-item span {
+    display: block;
+    font-size: 0.9em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.5;
+    color: white;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+
+    .section .section-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section .section-title,
+    .section .section-text {
+        padding: 0;
+        text-align: center;
+    }
+
+    .section h2 {
+        font-size: 2em;
+    }
+
+    .section p {
+        font-size: 1em;
+    }
+
+    .section .board {
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(3, 80px);
+    }
+
+    .board .square {
+        width: 80px;
+        height: 80px;
+        font-size: 3em !important;
+    }
+
+    .status {
+        font-size: 1.2em;
+    }
+
+    /* Responsive Styling for TicTacToe */
+    #tictactoe .section-content {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #tictactoe .section-title {
+        text-align: center;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item,
+    .education-timeline .timeline-item {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 20px;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    .timeline-item:nth-child(odd)::before,
+    .timeline-item:nth-child(even)::before {
+        left: 20px;
+        top: 20px;
+        transform: translateX(0);
+    }
+
+    .timeline-item:hover:nth-child(odd)::before,
+    .timeline-item:hover:nth-child(even)::before {
+        transform: scale(1.5) translateX(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .section h2 {
+        font-size: 1.5em;
+    }
+
+    .section p {
+        font-size: 0.9em;
+    }
+
+    .section .board {
+        grid-template-columns: repeat(3, 60px);
+        grid-template-rows: repeat(3, 60px);
+    }
+
+    .board .square {
+        width: 60px;
+        height: 60px;
+        font-size: 2.5em !important;
+    }
+
+    .status {
+        font-size: 1em;
+    }
+
+    .reset-button {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+    .timeline-item h3 {
+        font-size: 1em;
+    }
+
+    .timeline-item span {
+        font-size: 0.8em;
+    }
+
+    .timeline-item p {
+        font-size: 0.7em;
+    }
+
+    .timeline-item:nth-child(odd)::before,
+    .timeline-item:nth-child(even)::before {
+        left: 15px;
+    }
+
+    .timeline-item:hover:nth-child(odd)::before,
+    .timeline-item:hover:nth-child(even)::before {
+        transform: scale(1.5) translateX(0);
+    }
+}
+
+
