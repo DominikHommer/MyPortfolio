@@ -3,14 +3,12 @@ import Section from '../components/Section';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode, faChartLine, faLanguage, faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import { SiPython, SiC, SiCplusplus, SiScikitlearn, SiPytorch, SiJupyter, SiPostgresql, SiLinkedin, SiGithub } from 'react-icons/si';
-import { FaSyncAlt } from 'react-icons/fa';
 import { MdOutlineHub } from 'react-icons/md';
-import TicTacToe from '../components/tictactoe';
 
 const Home = () => {
-    const { board, status, handleClick, difficulty, setDifficulty, winningLine, resetGame} = TicTacToe();
+    {/*const { board, status, handleClick, difficulty, setDifficulty, winningLine, resetGame} = TicTacToe();
 
-    const isWinner = status.startsWith('Winner');
+    const isWinner = status.startsWith('Winner');*/}
 
     return (
         <div>

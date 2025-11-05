@@ -4,7 +4,6 @@ import 'aos/dist/aos.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import './App.css';
-import Chatbot from './components/Chatbot';
 
 function App() {
     useEffect(() => {

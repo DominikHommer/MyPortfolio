@@ -1,5 +1,6 @@
 {
   "name": "my-portfolio",
+  "homepage": "https://dominikhommer.github.io/MyPortfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -44,7 +45,7 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@babel/plugin-transform-private-property-in-object": "^7.24.7"
+    "@babel/plugin-transform-private-property-in-object": "^7.24.7",
+    "gh-pages": "^6.3.0"
   }
 }
-
