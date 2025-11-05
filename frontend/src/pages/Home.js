@@ -10,21 +10,30 @@ const Home = () => {
     
     return (
         <div>
-            <Section id="about" title="About me">
-                <div data-aos="fade-left">
-                    <p>My name is Dominik Hommer. I’m a student of Artificial Intelligence and Data Science, deeply
-                        passionate about solving complex challenges.</p>
+            <Section id="about" title="About Me">
+            <div data-aos="fade-left">
+                <p>
+                My name is <strong>Dominik</strong>. I’m in my final semester of studying <strong>Artificial Intelligence and Data Science</strong> at OTH Regensburg, 
+                where I focus on <strong>machine learning, deep learning, and computer vision</strong>.
+                </p>
 
-                    <p>My interests span Deep Learning, Machine Learning methods, Computer Vision, and I also have a
-                        strong foundation in Mathematics and Statistics, which I regularly apply to my AI work. While
-                        I’m focused on AI, I equally enjoy programming outside of this field, constantly building and
-                        exploring new software solutions.</p>
+                <p>
+                Alongside my studies, I’ve gained hands-on experience in the automotive and software industries — developing <strong>LLM-based tools</strong> at Audi, 
+                <strong>AI-driven features</strong> at AVL, and working on data science and backend projects at Trinnovative. 
+                I also conduct research on <strong>document digitization using deep learning</strong> as part of my academic work.
+                </p>
 
-                    <p>I’m always eager to collaborate, learn, and contribute to innovative projects. If you’re working
-                        on something exciting—whether in AI or general software development—let’s connect!</p>
+                <p>
+                My background in <strong>mathematics and statistics</strong> helps me approach AI challenges analytically and build reliable, data-driven solutions. 
+                I enjoy creating software that bridges theory and application, combining intelligent systems with clean, maintainable code.
+                </p>
 
-                </div>
+                <p>
+                I’m always eager to collaborate, learn, and contribute to innovative AI and software projects — so feel free to reach out if you’d like to connect!
+                </p>
+            </div>
             </Section>
+
 
             <Section id="skills" title="Skills" reverse>
                 <div >
