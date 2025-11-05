@@ -23,6 +23,7 @@ const Navbar = () => {
             <ul className={isOpen ? "show" : ""}>
                 <li><Link to="about" smooth={true} duration={500} spy={true} offset={0} activeClass="active" onClick={closeMenu}>About</Link></li>
                 <li><Link to="skills" smooth={true} duration={500} spy={true} offset={0} activeClass="active" onClick={closeMenu}>Skills</Link></li>
+                <li><Link to="research" smooth={true} duration={500} spy={true} offset={0} activeClass="active" onClick={closeMenu}>Research</Link></li>
                 <li><Link to="workexp" smooth={true} duration={500} spy={true} offset={0} activeClass="active" onClick={closeMenu}>Work Experience</Link></li>
                 <li><Link to="education" smooth={true} duration={500} spy={true} offset={0} activeClass="active" onClick={closeMenu}>Education</Link></li>
                 <li><Link to="projects" smooth={true} duration={500} spy={true} offset={0} activeClass="active" onClick={closeMenu}>Projects</Link></li>

@@ -320,7 +320,13 @@
         padding-right: 20px;
         text-align: left;
     }
-
+    .timeline-item,
+    .research-timeline .timeline-item {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 20px;
+        text-align: left;
+    }
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
         left: 0;
