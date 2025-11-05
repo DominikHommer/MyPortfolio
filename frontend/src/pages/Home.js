@@ -6,10 +6,7 @@ import { SiPython, SiC, SiCplusplus, SiScikitlearn, SiPytorch, SiJupyter, SiPost
 import { MdOutlineHub } from 'react-icons/md';
 
 const Home = () => {
-    {/*const { board, status, handleClick, difficulty, setDifficulty, winningLine, resetGame} = TicTacToe();
-
-    const isWinner = status.startsWith('Winner');*/}
-
+    
     return (
         <div>
             <Section id="about" title="About me">
