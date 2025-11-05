@@ -1,6 +1,6 @@
 # My Portfolio App
 
-**Visit it here**: https://dominikhommer.live
+**Visit it here**: https://dominikhommer.github.io/MyPortfolio/
 
 ## About the Project
 
