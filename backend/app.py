@@ -2,7 +2,9 @@ from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import os
 from random import choice
-from backend.chatbot.llama_client import LlamaClient
+#from backend.chatbot.llama_client import LlamaClient
+from chatbot.llama_client import LlamaClient
+
 
 from dotenv import load_dotenv
 
@@ -21,10 +23,10 @@ load_dotenv()
 
 CORS(app) 
 
-llama_client = LlamaClient(
+'''llama_client = LlamaClient(
     model_name="meta-llama/Meta-Llama-3-8B-Instruct",
     token=os.getenv("HUGGINGFACE_TOKEN")
-)
+)'''
 
 
 def calculate_winner(board):
@@ -149,7 +151,7 @@ def make_move_with_difficulty(difficulty):
     return jsonify(response)
 
 
-@app.route('/reset', methods=['POST'])
+'''@app.route('/reset', methods=['POST'])
 def reset_chat():
     llama_client.reset_chat_history()
     return jsonify({'message': 'Chat history reset successfully'}), 200
@@ -170,7 +172,7 @@ def ask():
 
     except Exception as e:
         error_message = f"An error occurred: {str(e)}"
-        return jsonify({'error': error_message}), 500
+        return jsonify({'error': error_message}), 500'''
     
 
 

@@ -118,7 +118,7 @@ const Home = () => {
                 </div>
             </Section>
 
-
+            
             <Section id="education" title="Education" reverse>
                 <div className="timeline education-timeline">
                     <div className="timeline-item" data-aos="fade-right">
@@ -146,8 +146,6 @@ const Home = () => {
                     </div>
                 </div>
             </Section>
-
-
 
             <Section id="projects" title="Projects">
                 <div className="projects-container">
@@ -179,10 +177,9 @@ const Home = () => {
                             <li>API integration with OpenWeatherMap for live weather data</li>
                         </ul>
                     </div>
-
                 </div>
             </Section>
-
+            {/*
             <Section id="tictactoe" title="TicTacToe" reverse>
                 <div className="game">
                     <div className={`status ${isWinner ? 'winner-status' : ''}`}>{status}</div>
@@ -214,10 +211,7 @@ const Home = () => {
                     </div>
                 </div>
             </Section>
-
-
-  
-
+            */}
             <Section id="contact" title="Contact" reverse>
                 <div>
                     <div className="contact-list">
