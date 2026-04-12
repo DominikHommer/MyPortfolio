@@ -4,42 +4,28 @@ import './Navbar.css';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
-
-    const closeMenu = () => {
-        setIsOpen(false); // Schließt das Menü nach Klick
-    };
+    const close = () => setIsOpen(false);
 
     return (
         <nav className="navbar">
-            <div className="hamburger" onClick={toggleMenu}>
+            <Link to="hero" smooth={true} duration={500} className="navbar-logo">
+                DH
+            </Link>
+            <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-            <ul className={isOpen ? "show" : ""}>
-                <li><Link to="about" smooth={true} duration={500} spy={true} offset={0} activeClass="active" onClick={closeMenu}>About</Link></li>
-                <li><Link to="skills" smooth={true} duration={500} spy={true} offset={0} activeClass="active" onClick={closeMenu}>Skills</Link></li>
-                <li><Link to="research" smooth={true} duration={500} spy={true} offset={0} activeClass="active" onClick={closeMenu}>Research</Link></li>
-                <li><Link to="workexp" smooth={true} duration={500} spy={true} offset={0} activeClass="active" onClick={closeMenu}>Work Experience</Link></li>
-                <li><Link to="education" smooth={true} duration={500} spy={true} offset={0} activeClass="active" onClick={closeMenu}>Education</Link></li>
-                <li><Link to="projects" smooth={true} duration={500} spy={true} offset={0} activeClass="active" onClick={closeMenu}>Projects</Link></li>
-                {/*<li><Link to="tictactoe" smooth={true} duration={500} spy={true} offset={0} activeClass="active" onClick={closeMenu}>TicTacToe</Link></li>*/}
-                <li><Link to="contact" smooth={true} duration={500} spy={true} offset={0} activeClass="active" onClick={closeMenu}>Contact</Link></li>
+            <ul className={`navbar-links ${isOpen ? 'show' : ''}`}>
+                <li><Link to="about" smooth duration={500} spy activeClass="active" onClick={close}>About</Link></li>
+                <li><Link to="research" smooth duration={500} spy activeClass="active" onClick={close}>Research</Link></li>
+                <li><Link to="projects" smooth duration={500} spy activeClass="active" onClick={close}>Projects</Link></li>
+                <li><Link to="workexp" smooth duration={500} spy activeClass="active" onClick={close}>Experience</Link></li>
+                <li><Link to="contact" smooth duration={500} spy activeClass="active" onClick={close}>Contact</Link></li>
+                <li><Link to="contact" smooth duration={500} className="navbar-cta" onClick={close}>Let's talk</Link></li>
             </ul>
         </nav>
     );
 };
 
 export default Navbar;
-
-
-
-
-
-
-
-
