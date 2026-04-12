@@ -5,6 +5,7 @@ import { FaEnvelope, FaMapMarkerAlt, FaArrowRight, FaExternalLinkAlt, FaShieldAl
 import '../components/portfolio.css';
 
 // Patronus wolf-shield logo (inline SVG)
+// eslint-disable-next-line
 const PatronusLogo = ({ size = 18 }) => (
   <svg width={size} height={size} viewBox="0 0 100 112" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M50 4 L94 20 L94 62 Q94 88 50 106 Q6 88 6 62 L6 20 Z" fill="#0ea5e9"/>
