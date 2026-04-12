@@ -424,7 +424,7 @@ const Home = () => {
               <div className="research-content">
                 <h4>Vision Transformer-Based Table Structure Recognition with a Novel Geometry-Aware Loss Function</h4>
                 <p>
-                  Geometry-aware loss with axis arguments, morphological closing, and gap suppression terms. Evaluated on PubTables-1M: up to 1.9pp region-level F1 over BCE baseline.
+                  Geometry-aware loss with axis arguments, morphological closing, and gap suppression terms. Evaluated on PubTables-1M: up to 9pp region-level F1 over BCE baseline.
                 </p>
                 <div className="tags-row">
                   <span className="tag tag-blue">PyTorch</span>
