@@ -21,6 +21,7 @@ const Navbar = () => {
                 <li><Link to="research" smooth duration={500} spy activeClass="active" onClick={close}>Research</Link></li>
                 <li><Link to="projects" smooth duration={500} spy activeClass="active" onClick={close}>Projects</Link></li>
                 <li><Link to="workexp" smooth duration={500} spy activeClass="active" onClick={close}>Experience</Link></li>
+                <li><Link to="patronus" smooth duration={500} spy activeClass="active" onClick={close}>Patronus</Link></li>
                 <li><Link to="contact" smooth duration={500} spy activeClass="active" onClick={close}>Contact</Link></li>
                 <li><Link to="contact" smooth duration={500} className="navbar-cta" onClick={close}>Let's talk</Link></li>
             </ul>
