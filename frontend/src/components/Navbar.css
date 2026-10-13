@@ -68,6 +68,8 @@
 }
 
 .hamburger {
+  border: 0;
+  background: transparent;
   display: none;
   flex-direction: column;
   cursor: pointer;
@@ -88,6 +90,8 @@
   }
 
   .hamburger {
+  border: 0;
+  background: transparent;
     display: flex;
   }
 

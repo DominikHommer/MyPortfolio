@@ -148,7 +148,7 @@
   letter-spacing: -0.03em;
 }
 
-.hero-left h1.name-blue {
+.hero-left .name-blue {
   color: #3B82F6;
 }
 
@@ -1004,3 +1004,8 @@ a.about-contact-item:hover svg {
     font-size: 2.5rem;
   }
 }
+
+.model-grid { margin: 26px 0 18px; }
+.model-note { font-size: 0.75rem; line-height: 1.7; color: #6b7280; max-width: 800px; margin: 0 0 20px; }
+section, #publication { scroll-margin-top: 80px; }
+.btn-primary:focus-visible, .btn-secondary:focus-visible, a:focus-visible, button:focus-visible { outline: 3px solid #3b82f6; outline-offset: 4px; }

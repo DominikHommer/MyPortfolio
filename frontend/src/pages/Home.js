@@ -35,24 +35,24 @@ const Home = () => {
 
             {/* Left */}
             <div className="hero-left">
-              <h1>Dominik</h1>
-              <h1 className="name-blue">Hommer.</h1>
+              <h1>Dominik<br /><span className="name-blue">Hommer.</span></h1>
               <p className="hero-subtitle">ML Engineer &nbsp;·&nbsp; AI Researcher &nbsp;·&nbsp; Builder</p>
               <p className="hero-description">
-                Completed B.Sc. in Artificial Intelligence &amp; Data Science at OTH Regensburg (March 2026). Thesis: geometry-aware loss for ViT-based table structure recognition. Incoming M.Sc. student at Uppsala University (Machine Learning &amp; Statistics, Sept 2026). Founder of Casdo Labs — building Patronus, an AI security platform.
+                AI security, computer vision and efficient machine learning. Co-founder of Casdo Labs, building Patronus Protect and publishing on-device AI-security models. First author of an accepted article in Array. B.Sc. graduate and currently enrolled in the Mathematics for Business and Industry master’s program at OTH Regensburg.
               </p>
               <div className="hero-buttons">
-                <Link to="projects" smooth duration={500} className="btn-primary">
-                  View Projects <FaArrowRight style={{ fontSize: '0.75rem' }} />
+                <Link to="research" smooth duration={500} className="btn-primary">
+                  Explore Research <FaArrowRight style={{ fontSize: '0.75rem' }} />
                 </Link>
                 <Link to="contact" smooth duration={500} className="btn-secondary">
                   Get in Touch
                 </Link>
+                <a className="btn-secondary" href={`${process.env.PUBLIC_URL}/CV_Dominik_Hommer.pdf`} target="_blank" rel="noopener noreferrer">Download CV</a>
               </div>
               <div className="hero-tags">
-                <span className="hero-tag">3 Research Projects</span>
-                <span className="hero-tag">DAAD Scholarship</span>
-                <span className="hero-tag">Python, PyTorch, APIs</span>
+                <span className="hero-tag">First-author paper accepted</span>
+                <span className="hero-tag">10,000+ monthly model downloads</span>
+                <span className="hero-tag">40,000+ total model downloads</span>
               </div>
             </div>
 
@@ -65,20 +65,20 @@ const Home = () => {
                   <div className="hero-timeline-item">
                     <div className="hero-tl-dot"></div>
                     <div className="hero-tl-content">
-                      <div className="hero-tl-date">Sept 2026</div>
-                      <div className="hero-tl-title">M.Sc. Data Science</div>
-                      <div className="hero-tl-sub">Uppsala University, Sweden</div>
-                      <span className="badge badge-upcoming">Upcoming</span>
+                      <div className="hero-tl-date">11 October 2026</div>
+                      <div className="hero-tl-title">First-author article accepted</div>
+                      <div className="hero-tl-sub">Array · Elsevier</div>
+                      <span className="badge badge-completed">In production</span>
                     </div>
                   </div>
 
                   <div className="hero-timeline-item">
                     <div className="hero-tl-dot"></div>
                     <div className="hero-tl-content">
-                      <div className="hero-tl-date">May 2026 — ongoing</div>
+                      <div className="hero-tl-date">May — July 2026</div>
                       <div className="hero-tl-title">VisLang-Seg</div>
-                      <div className="hero-tl-sub">DAAD-funded Research Project</div>
-                      <span className="badge badge-ongoing">Ongoing</span>
+                      <div className="hero-tl-sub">Mitacs Globalink Research Internship</div>
+                      <span className="badge badge-completed">Completed</span>
                     </div>
                   </div>
 
@@ -95,7 +95,7 @@ const Home = () => {
                   <div className="hero-timeline-item">
                     <div className="hero-tl-dot dot-green"></div>
                     <div className="hero-tl-content">
-                      <div className="hero-tl-date">March 2026</div>
+                      <div className="hero-tl-date">April 2026</div>
                       <div className="hero-tl-title">B.Sc. AI &amp; Data Science</div>
                       <div className="hero-tl-sub">OTH Regensburg · Geometry Loss Thesis</div>
                       <span className="badge badge-completed">Completed</span>
@@ -129,10 +129,10 @@ const Home = () => {
             <h2 className="about-heading">I'm Dominik —<br />ML Engineer &amp; AI Researcher.</h2>
             <div className="about-body">
               <p className="about-text">
-                B.Sc. graduate (AI &amp; Data Science, OTH Regensburg, March 2026) and incoming M.Sc. student at Uppsala University (Data Science · ML &amp; Statistics). My thesis introduced a geometry-aware loss function for Vision Transformer-based table cell segmentation.
+                I develop machine-learning methods and turn them into practical systems. My bachelor thesis introduced geometry-aware losses for Vision Transformer-based table segmentation and led to a first-author article accepted by Array. I am currently enrolled in the Mathematics for Business and Industry master’s program at OTH Regensburg.
               </p>
               <p className="about-text">
-                Industry experience at Audi, Siemens, and AVL. Co-Founder of Casdo Labs — building Patronus Protect, an AI security platform for enterprises.
+                My experience spans a Mitacs research internship in Canada, applied machine learning at Audi and AVL, and co-founding Casdo Labs. At Patronus, I work on prompt-injection detection, compact security models and runtime controls for AI agents.
               </p>
             </div>
             <div className="tags-row">
@@ -145,10 +145,10 @@ const Home = () => {
             </div>
             <div className="about-contact-row">
               <span className="about-contact-item">
-                <FaMapMarkerAlt /> Regensburg &nbsp;(from Sept 2026: Uppsala)
+                <FaMapMarkerAlt /> Germany
               </span>
-              <a href="mailto:dominik.hommer@web.de" className="about-contact-item">
-                <FaEnvelope /> dominik.hommer@web.de
+              <a href="mailto:dominik@patronus.studio" className="about-contact-item">
+                <FaEnvelope /> dominik@patronus.studio
               </a>
               <a href="https://github.com/DominikHommer" target="_blank" rel="noopener noreferrer" className="about-contact-item">
                 <SiGithub /> GitHub
@@ -187,7 +187,7 @@ const Home = () => {
                 <span className="tech-item"><SiPytorch size={13}/> PyTorch</span>
                 <span className="tech-item"><SiTensorflow size={13}/> TensorFlow</span>
                 <span className="tech-item"><SiScikitlearn size={13}/> scikit-learn</span>
-                <span className="tech-item"><SiReact size={13}/> React</span>
+                <span className="tech-item"><SiReact size={13}/> React</span><span className="tech-item">Hugging Face</span><span className="tech-item">ONNX Runtime</span>
                 <span className="tech-item"><SiPandas size={13}/> Pandas</span>
                 <span className="tech-item"><SiNumpy size={13}/> NumPy</span>
               </div>
@@ -198,9 +198,9 @@ const Home = () => {
               <div className="tech-items">
                 <span className="tech-item">Deep Learning</span>
                 <span className="tech-item">Computer Vision</span>
-                <span className="tech-item">Object Detection</span>
+                <span className="tech-item">Multi-task Learning</span>
                 <span className="tech-item">LLMs</span>
-                <span className="tech-item">LangChain</span>
+                <span className="tech-item">Model Evaluation</span><span className="tech-item">Quantization</span>
               </div>
             </div>
 
@@ -232,7 +232,7 @@ const Home = () => {
               <div className="project-card-label">Computer Vision · Research</div>
               <h3>ViT Table Structure Recognition</h3>
               <p>
-                Introduced a geometry-aware loss function for Vision Transformer-based table cell segmentation. Three regularization terms enforce row alignment, connected component constraints, and cell boundary precision. Evaluated on PubTables-1M.
+                Introduced a geometry-aware loss function for Vision Transformer-based table cell segmentation. Axis-alignment, morphological closing and spur suppression improve structural consistency. Evaluated on PubTables-1M; the resulting first-author article was accepted by Array on 11 October 2026.
               </p>
               <div className="tags-row">
                 <span className="tag tag-blue">PyTorch</span>
@@ -240,8 +240,8 @@ const Home = () => {
                 <span className="tag">Transformers</span>
                 <span className="tag">Computer Vision</span>
               </div>
-              <a href="https://github.com/DominikHommer" target="_blank" rel="noopener noreferrer" className="project-link">
-                View Project <FaExternalLinkAlt size={10} />
+              <a href="#research" className="project-link">
+                Research details <FaExternalLinkAlt size={10} />
               </a>
             </div>
 
@@ -257,8 +257,8 @@ const Home = () => {
                 <span className="tag">Computer Vision</span>
                 <span className="tag">Deep Learning</span>
               </div>
-              <a href="https://github.com/DominikHommer" target="_blank" rel="noopener noreferrer" className="project-link">
-                View Project <FaExternalLinkAlt size={10} />
+              <a href="https://github.com/DominikHommer/docdig-vogelwarte" target="_blank" rel="noopener noreferrer" className="project-link">
+                View code <FaExternalLinkAlt size={10} />
               </a>
             </div>
 
@@ -296,10 +296,10 @@ const Home = () => {
                 Co-Founder &nbsp;·&nbsp; Casdo Labs
               </p>
               <p className="about-text">
-                Patronus Protect is a system-wide AI security layer for enterprises. It acts as a central control instance for all AI interactions — protecting sensitive data, detecting threats in real time, and giving organisations full control over how AI is used across every application and provider.
+                Patronus Protect is an on-device AI firewall. It combines provider-independent AI-traffic detection with local inspection for prompt injection, sensitive data and risky tool calls across supported browsers, applications and agents.
               </p>
               <p className="about-text">
-                A core differentiator is the <strong>local-first architecture</strong>: Patronus Protect runs directly on the end device, with no reliance on external cloud infrastructure. This ensures GDPR compliance, eliminates data transfer risks, and extends protection even to locally-run and offline AI models.
+                The scanning engine, <strong>Patronus Ark</strong>, combines native rules, compact classifiers and quantized transformers in a Rust/Python cascade. Security inspection runs locally; allowed requests still go to the selected AI provider. I connect model research with practical deployment and runtime policies.
               </p>
 
               <div className="patronus-problems">
@@ -333,28 +333,28 @@ const Home = () => {
                   <FaShieldAlt className="patronus-feature-icon" />
                   <div>
                     <strong>System-Wide Monitoring</strong>
-                    <p>All AI interactions captured across every app and provider — inputs, outputs, and automated actions. Full Shadow AI detection.</p>
+                    <p>Provider-independent detection uses signals from AI traffic across supported apps and protocols.</p>
                   </div>
                 </div>
                 <div className="patronus-feature">
                   <FaShieldAlt className="patronus-feature-icon" />
                   <div>
                     <strong>Real-Time Data Protection</strong>
-                    <p>Sensitive content detected and blocked before it leaves the device. GDPR-compliant by design, no cloud routing of confidential data.</p>
+                    <p>Local inspection identifies PII, secrets and sensitive documents so policies can mask or block detected risks.</p>
                   </div>
                 </div>
                 <div className="patronus-feature">
                   <FaShieldAlt className="patronus-feature-icon" />
                   <div>
                     <strong>Threat Detection &amp; Action Control</strong>
-                    <p>Prompt injection and manipulation attacks stopped in real time. Full control over which AI actions are permitted or restricted.</p>
+                    <p>Specialized models assess suspicious instructions and supported tool calls; policies determine the response.</p>
                   </div>
                 </div>
                 <div className="patronus-feature">
                   <FaShieldAlt className="patronus-feature-icon" />
                   <div>
                     <strong>Local-First Architecture</strong>
-                    <p>On-device processing with no cloud dependency. Works with cloud AI, local models, and hybrid environments. Minimal latency, maximum privacy.</p>
+                    <p>Native rules handle simple cases; lightweight classifiers and ONNX transformers provide deeper inspection when needed.</p>
                   </div>
                 </div>
               </div>
@@ -363,8 +363,8 @@ const Home = () => {
                 <a href="https://patronus.studio" target="_blank" rel="noopener noreferrer" className="btn-primary">
                   Visit patronus.studio <FaExternalLinkAlt size={11} />
                 </a>
-                <a href="https://www.linkedin.com/company/patronus-protect/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="btn-secondary">
-                  <SiLinkedin size={14} /> LinkedIn
+                <a href="https://github.com/patronus-protect/patronus-security" target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                  <SiGithub size={14} /> Patronus Ark
                 </a>
               </div>
             </div>
@@ -396,19 +396,57 @@ const Home = () => {
 
       <hr className="section-divider" />
 
+      <section id="models" className="projects-section">
+        <div className="container">
+          <div className="section-label">Open Models · Hugging Face</div>
+          <h2 className="section-heading">AI Security Models</h2>
+          <p className="about-text">Models and deployment variants published through Patronus: <strong>10,000+ monthly downloads and 40,000+ total downloads</strong>. Verified on 13 October 2026: 12,513 in the preceding month, 49,007 all-time, across 18 public repositories. These are repository downloads, not unique users.</p>
+          <div className="projects-grid model-grid">
+            {[
+              ['Wolf Defender', 'Prompt-injection detection', 'Multilingual mmBERT classifiers with adversarial augmentation and hard-negative training. Small v2: 95.21% F1 on Qualifire (5,000 examples); quantized ONNX export as small as 96.30 MB.', 'wolf-defender-prompt-injection-small', ['mmBERT', 'ONNX', 'INT8 / INT4']],
+              ['Lion Warden', 'Multi-task security', 'One shared encoder, seven security heads: injection, threat, sensitive documents, routing, and tool type, action and data-flow risk. Masked multi-task training; reported mean head F1 0.937 on held-out test sets.', 'lion-warden-ai-security-classifier', ['Multi-task learning', 'Local inference']],
+              ['Wolf Defender Jev', 'Context-aware decisions', '151M-parameter model that scores possible answers to security questions using agent context, tool output and proposed actions. Calibrated probabilities, 15 languages and CPU inference.', 'wolf-defender-jev', ['Agent context', 'Calibration']],
+              ['Orca Sonar', 'Document classification', 'Classifies document topics to support data-loss-prevention policies and sensitive-document routing.', 'orca-sonar-document-classifier', ['DLP', 'Classification']],
+              ['Husky', 'Agent tool risk', 'Dedicated models for tool type, operation and security properties, including sensitive or untrusted sources and external sinks.', 'husky-nose-tool-security-properties-classifier', ['Tool use', 'Agent security']],
+              ['Panther Read and GLiNER Edge', 'Routing and entity extraction', 'Intent classifiers support request routing; quantized upstream GLiNER models support local entity extraction. The GLiNER releases are deployment adaptations of existing models.', 'panther-read-intent-classifier', ['Intent routing', 'PII']]
+            ].map(([name, category, description, repo, tags]) => (
+              <article className="project-card-new" key={name}>
+                <div className="project-card-label">{category}</div>
+                <h3>{name}</h3><p>{description}</p>
+                <div className="tags-row">{tags.map(tag => <span className="tag tag-blue" key={tag}>{tag}</span>)}</div>
+                <a href={`https://huggingface.co/patronus-studio/${repo}`} target="_blank" rel="noopener noreferrer" className="project-link">Model card <FaExternalLinkAlt size={10} /></a>
+              </article>
+            ))}
+          </div>
+          <p className="model-note">Benchmark figures are developer-reported model-card results for the specified evaluation sets. Deployment speed and quantized-model quality depend on the selected artifact and hardware.</p>
+          <a href="https://huggingface.co/patronus-studio" target="_blank" rel="noopener noreferrer" className="btn-secondary">Browse all models <FaExternalLinkAlt size={11} /></a>
+        </div>
+      </section>
+      <hr className="section-divider" />
+
       {/* ===== RESEARCH ===== */}
       <section id="research" className="research-section">
         <div className="container">
           <div className="section-label">Research</div>
           <h2 className="section-heading">Research Work</h2>
           <div className="research-list">
+            <article className="research-item" id="publication">
+              <div className="research-date">Accepted 11 Oct 2026</div>
+              <div className="research-content">
+                <span className="badge badge-completed">Accepted · In production</span>
+                <h4>Geometry-Aware Losses for Structurally Consistent Table Segmentation</h4>
+                <p><strong>First author: Dominik Hommer.</strong> Array, Elsevier. This article grew out of my bachelor thesis on geometry-aware learning for Vision Transformer-based table segmentation. Publication is being prepared; bibliographic details and the article link will be added when available.</p>
+                <div className="tags-row"><span className="tag tag-blue">Journal article</span><span className="tag">Table segmentation</span><span className="tag">Geometry-aware loss</span></div>
+              </div>
+            </article>
+
 
             <div className="research-item">
-              <div className="research-date">May 2026 — ongoing</div>
+              <div className="research-date">May — July 2026</div>
               <div className="research-content">
                 <h4>VisLang-Seg: Integrating Vision Transformers &amp; LLMs for Context-Aware Multimodal Image Segmentation</h4>
                 <p>
-                  DAAD scholarship. Integrating Vision Transformers with LLMs for context-aware multimodal image segmentation with cross-modal reasoning between visual and textual representations.
+                  Mitacs Globalink research internship in Edmonton, Canada. Developed a resource-efficient two-stage cancer-cell segmentation architecture combining lightweight preprocessing and candidate selection with Vision Transformers and LLM-based multimodal segmentation.
                 </p>
                 <div className="tags-row">
                   <span className="tag tag-blue">PyTorch</span>
@@ -424,7 +462,7 @@ const Home = () => {
               <div className="research-content">
                 <h4>Vision Transformer-Based Table Structure Recognition with a Novel Geometry-Aware Loss Function</h4>
                 <p>
-                  Geometry-aware loss with axis arguments, morphological closing, and gap suppression terms. Evaluated on PubTables-1M: up to 9pp region-level F1 over BCE baseline.
+                  Geometry-aware loss with axis-alignment, morphological closing and spur-suppression terms. Evaluated on PubTables-1M: up to 9 percentage points improvement in region-level detection over a BCE-Dice baseline, with comparable pixel-level performance and no added inference-time overhead.
                 </p>
                 <div className="tags-row">
                   <span className="tag tag-blue">PyTorch</span>
@@ -436,7 +474,7 @@ const Home = () => {
             </div>
 
             <div className="research-item">
-              <div className="research-date">2024 — 2025</div>
+              <div className="research-date">2024 — 2026</div>
               <div className="research-content">
                 <h4>Document Digitalization using Deep Learning and Computer Vision</h4>
                 <p>
@@ -464,7 +502,7 @@ const Home = () => {
           <div className="work-list">
 
             <div className="work-item">
-              <div className="work-date">2025 — Apr 2026</div>
+              <div className="work-date">Apr 2025 — Apr 2026</div>
               <div className="work-content">
                 <h4>Working Student – Data Science &amp; Backend</h4>
                 <div className="work-company">Trinnovative GmbH · Regensburg</div>
@@ -475,7 +513,7 @@ const Home = () => {
             </div>
 
             <div className="work-item">
-              <div className="work-date">2025 — Feb 2026</div>
+              <div className="work-date">Oct 2025 — Feb 2026</div>
               <div className="work-content">
                 <h4>Tutor – CodeClinic (Programming)</h4>
                 <div className="work-company">OTH Regensburg</div>
@@ -511,7 +549,7 @@ const Home = () => {
             </div>
 
             <div className="work-item">
-              <div className="work-date">Sep 2018 — Jul 2021</div>
+              <div className="work-date">Sep 2018 — Aug 2021</div>
               <div className="work-content">
                 <h4>Mechatronics Apprentice</h4>
                 <div className="work-company">Siemens AG · Amberg</div>
@@ -537,26 +575,26 @@ const Home = () => {
 
             <div className="education-item">
               <div className="education-content">
-                <h4>M.Sc. Data Science</h4>
-                <div className="education-school">Uppsala University, Sweden</div>
-                <div className="education-date">Sept 2026</div>
+                <h4>Master’s program in Mathematics for Business and Industry</h4>
+                <div className="education-school">OTH Regensburg, Germany</div>
+                <div className="education-date">Currently enrolled</div>
               </div>
-              <span className="badge badge-upcoming">Upcoming</span>
+              <span className="badge badge-active">Enrolled</span>
             </div>
 
             <div className="education-item">
               <div className="education-content">
                 <h4>B.Sc. Artificial Intelligence and Data Science</h4>
                 <div className="education-school">University of Applied Sciences Regensburg (OTH)</div>
-                <div className="education-date">Oct 2022 – March 2026</div>
+                <div className="education-date">Oct 2022 – April 2026 · 210 ECTS · Overall grade 1.8 (German scale)</div>
               </div>
               <span className="badge badge-completed">Completed</span>
             </div>
 
             <div className="education-item">
               <div className="education-content">
-                <h4>GED / Abitur</h4>
-                <div className="education-school">Upper Secondary School Amberg</div>
+                <h4>Abitur</h4>
+                <div className="education-school">Upper Vocational School Amberg · German Abitur Prize in Physics</div>
                 <div className="education-date">July 2022</div>
               </div>
             </div>
@@ -595,8 +633,8 @@ const Home = () => {
         <div className="container">
           <h2>Get in Touch</h2>
           <p>Open to research collaborations, opportunities, and interesting conversations.</p>
-          <a href="mailto:dominik.hommer@web.de" className="btn-email">
-            <FaEnvelope /> dominik.hommer@web.de
+          <a href="mailto:dominik@patronus.studio" className="btn-email">
+            <FaEnvelope /> dominik@patronus.studio
           </a>
         </div>
       </section>
@@ -611,6 +649,7 @@ const Home = () => {
           <a href="https://www.linkedin.com/in/dominikhommer" target="_blank" rel="noopener noreferrer" className="footer-link">
             <SiLinkedin /> LinkedIn
           </a>
+          <a href="https://huggingface.co/patronus-studio" target="_blank" rel="noopener noreferrer" className="footer-link">Hugging Face</a>
           <a href="https://patronus.studio" target="_blank" rel="noopener noreferrer" className="footer-link">
             <img src={`${process.env.PUBLIC_URL}/Patronus_Logo_4096_4096.png`} alt="Patronus" style={{ width: 18, height: 18, objectFit: 'contain' }} /> Patronus
           </a>
