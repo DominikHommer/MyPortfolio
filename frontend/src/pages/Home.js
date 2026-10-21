@@ -167,14 +167,6 @@ function Home() {
                 <a href="#research" className="button-primary">
                   Selected research <FiArrowDown aria-hidden="true" />
                 </a>
-                <a
-                  href={`${process.env.PUBLIC_URL}/CV_Dominik_Hommer.pdf`}
-                  className="text-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Download CV <FiArrowUpRight aria-hidden="true" />
-                </a>
               </div>
             </div>
             <RouteDrawing />

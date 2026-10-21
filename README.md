@@ -12,6 +12,6 @@ Pushes to `main` build the frontend and deploy it through GitHub Pages using `.g
 
 ## Content updates
 
-Main content lives in `frontend/src/pages/Home.js`. The public CV is `frontend/public/CV_Dominik_Hommer.pdf`; replace that file whenever the CV changes.
+Main content lives in `frontend/src/pages/Home.js`. The website does not publish a CV download.
 
 Download figures are dated snapshots aggregated across the public `patronus-studio` model repositories, including deployment variants. They are repository downloads, not unique users. The October 2026 update uses 12,513 monthly and 49,007 all-time downloads; benchmark figures refer to their named model-card evaluation sets. The Array article was published online on 17 October 2026: Hommer and Vogl, Array 32 (2026), 101347, DOI 10.1016/j.array.2026.101347. ScienceDirect, DOI, ResearchGate paper and ResearchGate profile links are included.
