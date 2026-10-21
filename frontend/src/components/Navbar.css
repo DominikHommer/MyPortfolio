@@ -1,121 +1,150 @@
-.navbar {
-  position: fixed;
+.site-header {
+  position: sticky;
   top: 0;
-  width: 100%;
-  background-color: #ffffff;
-  border-bottom: 1px solid #E5E7EB;
-  z-index: 1000;
-  padding: 0 48px;
-  height: 60px;
+  z-index: 100;
+  border-bottom: 1px solid var(--line);
+  background: rgba(250, 251, 249, 0.95);
+  backdrop-filter: blur(15px);
+}
+.navbar {
+  min-height: 84px;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 64px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 42px;
 }
-
 .navbar-logo {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #111827;
+  font-size: 29px;
+  font-weight: 650;
+  letter-spacing: -2px;
   text-decoration: none;
-  cursor: pointer;
-  letter-spacing: -0.02em;
-}
-
-.navbar-links {
-  list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
-  gap: 2px;
   align-items: center;
+  gap: 12px;
 }
-
-.navbar-links li a {
-  color: #6B7280;
+.navbar-logo span {
+  font-size: 20px;
+  color: var(--blue);
+  font-weight: 400;
+}
+.nav-note {
+  font-size: 11px;
+  color: var(--muted);
+  font-family: var(--mono);
+}
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 0;
+  margin: 0 0 0 auto;
+  list-style: none;
+}
+.navbar-links a {
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 13px;
   font-weight: 500;
-  padding: 6px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: color 0.15s, background 0.15s;
-  display: block;
+  position: relative;
+  padding: 10px 0;
 }
-
-.navbar-links li a:hover {
-  color: #111827;
-  background: #F3F4F6;
+.navbar-links a:not(.navbar-cta)::after {
+  content: "";
+  height: 1px;
+  background: var(--blue);
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 100%;
+  transition: right 0.2s;
 }
-
-.navbar-links li a.active {
-  color: #111827;
+.navbar-links a:hover::after,
+.navbar-links a.active::after {
+  right: 0;
 }
-
+.navbar-links a.active {
+  color: var(--blue);
+}
 .navbar-cta {
-  background: #111827 !important;
-  color: #ffffff !important;
-  padding: 7px 16px !important;
-  border-radius: 8px !important;
-  font-weight: 600 !important;
-  font-size: 0.8rem !important;
-  transition: background 0.15s !important;
-  margin-left: 8px;
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  border: 1px solid #b8c8d1;
+  padding: 10px 16px !important;
+  border-radius: 3px;
 }
-
 .navbar-cta:hover {
-  background: #374151 !important;
-  color: #ffffff !important;
+  background: var(--pale);
 }
-
 .hamburger {
-  border: 0;
-  background: transparent;
   display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-  padding: 4px;
 }
-
-.hamburger div {
-  width: 22px;
-  height: 2px;
-  background-color: #111827;
-  border-radius: 2px;
+.skip-link {
+  position: fixed;
+  left: 20px;
+  top: -100px;
+  z-index: 101;
+  padding: 12px;
+  background: white;
 }
-
-@media (max-width: 900px) {
+.skip-link:focus {
+  top: 12px;
+}
+@media (max-width: 1100px) {
   .navbar {
-    padding: 0 20px;
+    padding: 0 32px;
+    gap: 24px;
   }
-
+  .nav-note {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .navbar {
+    min-height: 70px;
+    padding: 0 24px;
+    justify-content: space-between;
+  }
   .hamburger {
-  border: 0;
-  background: transparent;
     display: flex;
+    gap: 18px;
+    border: 0;
+    background: none;
+    color: var(--ink);
+    padding: 12px 0 12px 12px;
+    font: 12px var(--mono);
+    cursor: pointer;
   }
-
   .navbar-links {
-    flex-direction: column;
-    align-items: flex-start;
+    display: none;
     position: absolute;
-    top: 60px;
     left: 0;
     right: 0;
-    background: white;
-    border-bottom: 1px solid #E5E7EB;
-    padding: 12px 16px;
-    display: none;
-    gap: 2px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    top: 70px;
+    margin: 0;
+    padding: 20px 24px 28px;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    gap: 0;
   }
-
   .navbar-links.show {
     display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
-
+  .navbar-links a {
+    display: block;
+    padding: 16px 0;
+    font-size: 18px;
+  }
+  .navbar-links a::after {
+    display: none;
+  }
   .navbar-cta {
-    margin-left: 0;
-    margin-top: 4px;
+    margin-top: 10px;
+  }
+  .navbar-cta span {
+    float: right;
   }
 }

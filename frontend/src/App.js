@@ -1,29 +1,14 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos'; 
-import 'aos/dist/aos.css'; 
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import "./App.css";
 
 function App() {
-    useEffect(() => {
-        AOS.init({ duration: 1000 });
-    }, []);
-
-    return (
-        <div className="App">
-            <Navbar />
-            <Home />
-        </div>
-    );
+  return (
+    <div className="App">
+      <Navbar />
+      <Home />
+    </div>
+  );
 }
-
 export default App;
-
-
-
-
-
-
-
-
