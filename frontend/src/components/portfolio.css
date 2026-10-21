@@ -26,10 +26,10 @@ p {
   line-height: 1.8;
   color: var(--muted);
 }
-.serif-word {
-  font-family: "Instrument Serif", Georgia, serif;
+.accent-word {
+  font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   letter-spacing: -1px;
   color: var(--blue);
 }
@@ -37,7 +37,7 @@ p {
   display: flex;
   align-items: center;
   gap: 18px;
-  font: 11px var(--mono);
+  font: 11px var(--label-font);
   color: var(--muted);
   margin-bottom: 42px;
 }
@@ -58,7 +58,7 @@ p {
 }
 .eyebrow {
   display: block;
-  font: 10px/1.7 var(--mono);
+  font: 10px/1.7 var(--label-font);
   letter-spacing: 0.035em;
   text-transform: uppercase;
   color: var(--muted);
@@ -114,7 +114,7 @@ p {
 .hero-topline {
   display: flex;
   justify-content: space-between;
-  font: 10px var(--mono);
+  font: 10px var(--label-font);
   color: var(--muted);
 }
 .location-mark::before {
@@ -160,7 +160,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font: 10px var(--mono);
+  font: 10px var(--label-font);
   color: var(--muted);
 }
 .hero-foot a {
@@ -186,7 +186,7 @@ p {
   justify-content: space-between;
   align-items: center;
   gap: 12px;
-  font: 10px var(--mono);
+  font: 10px var(--label-font);
   color: var(--muted);
 }
 .note-top {
@@ -198,8 +198,8 @@ p {
   padding-top: 12px;
 }
 .note-bottom > span:first-child {
-  font-family: "Instrument Serif", Georgia, serif;
-  font-style: italic;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
   font-size: 22px;
   color: var(--ink);
 }
@@ -236,7 +236,7 @@ p {
   stroke-linecap: round;
 }
 .route-drawing text {
-  font-family: var(--mono);
+  font-family: var(--label-font);
   font-size: 8px;
   fill: #526c8c;
   letter-spacing: 0.3px;
@@ -259,7 +259,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  font: 10px/1.6 var(--mono);
+  font: 10px/1.6 var(--label-font);
   color: var(--muted);
 }
 .status {
@@ -267,7 +267,7 @@ p {
   align-items: center;
   gap: 7px;
   color: #225d50;
-  font: 10px/1.7 var(--mono);
+  font: 10px/1.7 var(--label-font);
 }
 .status::before {
   content: "";
@@ -313,7 +313,7 @@ p {
   padding: 8px 0 20px;
 }
 .publication-main .citation {
-  font: 10px/1.8 var(--mono);
+  font: 10px/1.8 var(--label-font);
   margin: 0;
 }
 .research-pair {
@@ -340,7 +340,7 @@ p {
   margin-bottom: 16px;
 }
 .note-caption {
-  font: 10px var(--mono);
+  font: 10px var(--label-font);
   color: var(--muted);
 }
 .patronus-section {
@@ -360,7 +360,7 @@ p {
   position: absolute;
   top: -13px;
   right: 18px;
-  font: 22px var(--mono);
+  font: 22px var(--label-font);
   color: var(--blue);
 }
 .patronus-intro h2 {
@@ -383,16 +383,12 @@ p {
   gap: 23px;
   margin-top: 30px;
 }
-.patronus-glyph {
+.patronus-original-logo {
   display: block;
-  width: 55px;
-  height: 55px;
-  margin-bottom: 25px;
-}
-.patronus-glyph svg {
-  width: 100%;
-  stroke: var(--blue);
-  stroke-width: 1.5;
+  width: 90px;
+  height: 105px;
+  object-fit: contain;
+  margin-bottom: 24px;
 }
 .patronus-detail h3 {
   font-size: 24px;
@@ -413,7 +409,7 @@ p {
   border-top: 1px solid #c9d8ea;
   margin-top: 25px;
   color: var(--blue);
-  font: 9px var(--mono);
+  font: 9px var(--label-font);
 }
 .architecture svg {
   width: 12px;
@@ -445,7 +441,7 @@ p {
   color: var(--blue);
 }
 .download-stat > span {
-  font: 10px var(--mono);
+  font: 10px var(--label-font);
   color: var(--muted);
 }
 .model-grid {
@@ -461,7 +457,7 @@ p {
   border-top: 1px solid var(--line);
 }
 .model-index {
-  font: 10px var(--mono);
+  font: 10px var(--label-font);
   color: var(--blue);
   padding-top: 2px;
 }
@@ -492,7 +488,7 @@ p {
   justify-self: start;
 }
 .models-foot p {
-  font: 11px/1.8 var(--mono);
+  font: 11px/1.8 var(--label-font);
 }
 .about-section {
   padding: 100px 0 70px;
@@ -582,7 +578,7 @@ summary::-webkit-details-marker {
   cursor: pointer;
 }
 .experience-entry summary > span:first-child {
-  font: 10px/1.7 var(--mono);
+  font: 10px/1.7 var(--label-font);
   color: var(--muted);
 }
 .experience-entry strong {
@@ -660,7 +656,7 @@ details[open] .details-plus {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  font: 9px var(--mono);
+  font: 9px var(--label-font);
   color: var(--muted);
 }
 .footer > div {
@@ -888,9 +884,6 @@ details[open] .details-plus {
   .patronus-intro h2 {
     font-size: 57px;
   }
-  .patronus-glyph {
-    display: none;
-  }
   .patronus-detail {
     border-top: 1px solid #c9d8ea;
     padding-top: 30px;
@@ -972,5 +965,53 @@ details[open] .details-plus {
   .hero-left h1 {
     font-size: 70px;
     letter-spacing: -5px;
+  }
+}
+
+/* Restore the earlier sans-serif typography and readable labels. */
+.accent-word {
+  font-weight: 600;
+  letter-spacing: inherit;
+}
+.section-label,
+.eyebrow,
+.hero-topline,
+.hero-foot,
+.note-top,
+.note-bottom,
+.publication-margin,
+.publication-main .citation,
+.model-index,
+.download-stat > span,
+.experience-entry summary > span:first-child,
+.footer,
+.nav-note {
+  font-size: 12px;
+}
+.note-bottom > span:first-child {
+  font-size: 16px;
+  font-weight: 500;
+}
+.models-foot p {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+.route-drawing text {
+  font-size: 9px;
+}
+@media (max-width: 600px) {
+  .hero-topline,
+  .hero-foot,
+  .note-top,
+  .note-bottom,
+  .publication-margin,
+  .section-label,
+  .eyebrow,
+  .publication-main .citation {
+    font-size: 11px;
+  }
+  .patronus-original-logo {
+    width: 76px;
+    height: 89px;
   }
 }

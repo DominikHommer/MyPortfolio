@@ -187,7 +187,7 @@ function Home() {
             <h2>
               Questions worth
               <br />
-              <span className="serif-word">following.</span>
+              <span className="accent-word">following.</span>
             </h2>
             <p>
               From the geometry of a table
@@ -317,12 +317,13 @@ function Home() {
               </div>
             </div>
             <div className="patronus-detail">
-              <span className="patronus-glyph" aria-hidden="true">
-                <svg viewBox="0 0 120 120" fill="none">
-                  <path d="M60 8 104 25v37c0 23-18 39-44 50C34 101 16 85 16 62V25L60 8Z" />
-                  <path d="m39 57 15 15 29-30" />
-                </svg>
-              </span>
+              <img
+                className="patronus-original-logo"
+                src={`${process.env.PUBLIC_URL}/Patronus_Logo_4096_4096.png`}
+                alt="Patronus Protect original logo"
+                width="90"
+                height="105"
+              />
               <h3>
                 A local security layer
                 <br />
@@ -357,7 +358,7 @@ function Home() {
             <h2>
               Open models.
               <br />
-              <span className="serif-word">Local inference.</span>
+              <span className="accent-word">Local inference.</span>
             </h2>
             <div className="download-stat">
               <strong>
@@ -407,7 +408,7 @@ function Home() {
               <br />
               An independent
               <br />
-              <span className="serif-word">streak.</span>
+              <span className="accent-word">streak.</span>
             </h2>
             <div className="about-copy">
               <p className="about-lead">
@@ -449,11 +450,7 @@ function Home() {
               <div className="education-entry">
                 <span className="eyebrow">2022–2026</span>
                 <h4>B.Sc. Artificial Intelligence and Data Science</h4>
-                <p>
-                  OTH Regensburg · 210 ECTS
-                  <br />
-                  Overall grade 1.8 · Thesis 1.0 (German scale)
-                </p>
+                <p>OTH Regensburg · 210 ECTS</p>
               </div>
               <details className="background-details">
                 <summary>
@@ -508,7 +505,7 @@ function Home() {
           <h2>
             Let’s see
             <br />
-            <span className="serif-word">where it goes.</span>
+            <span className="accent-word">where it goes.</span>
           </h2>
           <a href="mailto:dominik@patronus.studio" className="contact-email">
             dominik@patronus.studio <FiArrowUpRight aria-hidden="true" />

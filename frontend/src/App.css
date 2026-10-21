@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;450;500;550;600;650;700;750;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 :root {
   --paper: #fafbf9;
   --white: #fff;
@@ -7,7 +7,7 @@
   --blue: #2860d8;
   --line: #dce3e7;
   --pale: #edf3fa;
-  --mono: "DM Mono", monospace;
+  --label-font: "Inter", sans-serif;
 }
 * {
   box-sizing: border-box;
