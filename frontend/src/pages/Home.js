@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import { SiLinkedin, SiGithub, SiPython, SiPytorch, SiTensorflow, SiScikitlearn, SiReact, SiPostgresql, SiDocker, SiTypescript, SiCplusplus, SiC, SiNumpy, SiPandas } from 'react-icons/si';
+import { SiLinkedin, SiGithub, SiResearchgate, SiPython, SiPytorch, SiTensorflow, SiScikitlearn, SiReact, SiPostgresql, SiDocker, SiTypescript, SiCplusplus, SiC, SiNumpy, SiPandas } from 'react-icons/si';
 import { FaEnvelope, FaMapMarkerAlt, FaArrowRight, FaExternalLinkAlt, FaShieldAlt } from 'react-icons/fa';
 import '../components/portfolio.css';
 
@@ -38,7 +38,7 @@ const Home = () => {
               <h1>Dominik<br /><span className="name-blue">Hommer.</span></h1>
               <p className="hero-subtitle">ML Engineer &nbsp;·&nbsp; AI Researcher &nbsp;·&nbsp; Builder</p>
               <p className="hero-description">
-                AI security, computer vision and efficient machine learning. Co-founder of Casdo Labs, building Patronus Protect and publishing on-device AI-security models. First author of an accepted article in Array. B.Sc. graduate and currently enrolled in the Mathematics for Business and Industry master’s program at OTH Regensburg.
+                AI security, computer vision and efficient machine learning. Co-founder of Casdo Labs, building Patronus Protect and publishing on-device AI-security models. First author of a published journal article in Array. B.Sc. graduate and currently enrolled in the Mathematics for Business and Industry master’s program at OTH Regensburg.
               </p>
               <div className="hero-buttons">
                 <Link to="research" smooth duration={500} className="btn-primary">
@@ -50,7 +50,7 @@ const Home = () => {
                 <a className="btn-secondary" href={`${process.env.PUBLIC_URL}/CV_Dominik_Hommer.pdf`} target="_blank" rel="noopener noreferrer">Download CV</a>
               </div>
               <div className="hero-tags">
-                <span className="hero-tag">First-author paper accepted</span>
+                <span className="hero-tag">First-author journal publication</span>
                 <span className="hero-tag">10,000+ monthly model downloads</span>
                 <span className="hero-tag">40,000+ total model downloads</span>
               </div>
@@ -65,10 +65,10 @@ const Home = () => {
                   <div className="hero-timeline-item">
                     <div className="hero-tl-dot"></div>
                     <div className="hero-tl-content">
-                      <div className="hero-tl-date">11 October 2026</div>
-                      <div className="hero-tl-title">First-author article accepted</div>
+                      <div className="hero-tl-date">17 October 2026</div>
+                      <div className="hero-tl-title">First-author article published</div>
                       <div className="hero-tl-sub">Array · Elsevier</div>
-                      <span className="badge badge-completed">In production</span>
+                      <span className="badge badge-completed">Published</span>
                     </div>
                   </div>
 
@@ -129,7 +129,7 @@ const Home = () => {
             <h2 className="about-heading">I'm Dominik —<br />ML Engineer &amp; AI Researcher.</h2>
             <div className="about-body">
               <p className="about-text">
-                I develop machine-learning methods and turn them into practical systems. My bachelor thesis introduced geometry-aware losses for Vision Transformer-based table segmentation and led to a first-author article accepted by Array. I am currently enrolled in the Mathematics for Business and Industry master’s program at OTH Regensburg.
+                I develop machine-learning methods and turn them into practical systems. My bachelor thesis introduced geometry-aware losses for Vision Transformer-based table segmentation and led to a first-author article published in Array. I am currently enrolled in the Mathematics for Business and Industry master’s program at OTH Regensburg.
               </p>
               <p className="about-text">
                 My experience spans a Mitacs research internship in Canada, applied machine learning at Audi and AVL, and co-founding Casdo Labs. At Patronus, I work on prompt-injection detection, compact security models and runtime controls for AI agents.
@@ -155,6 +155,9 @@ const Home = () => {
               </a>
               <a href="https://www.linkedin.com/in/dominikhommer" target="_blank" rel="noopener noreferrer" className="about-contact-item">
                 <SiLinkedin /> LinkedIn
+              </a>
+              <a href="https://www.researchgate.net/profile/Dominik-Hommer" target="_blank" rel="noopener noreferrer" className="about-contact-item">
+                <SiResearchgate /> ResearchGate
               </a>
             </div>
           </div>
@@ -232,7 +235,7 @@ const Home = () => {
               <div className="project-card-label">Computer Vision · Research</div>
               <h3>ViT Table Structure Recognition</h3>
               <p>
-                Introduced a geometry-aware loss function for Vision Transformer-based table cell segmentation. Axis-alignment, morphological closing and spur suppression improve structural consistency. Evaluated on PubTables-1M; the resulting first-author article was accepted by Array on 11 October 2026.
+                Introduced a geometry-aware loss function for Vision Transformer-based table cell segmentation. Axis-alignment, morphological closing and spur suppression improve structural consistency. Evaluated on PubTables-1M; the resulting first-author article was published online in Array on 17 October 2026.
               </p>
               <div className="tags-row">
                 <span className="tag tag-blue">PyTorch</span>
@@ -431,11 +434,17 @@ const Home = () => {
           <h2 className="section-heading">Research Work</h2>
           <div className="research-list">
             <article className="research-item" id="publication">
-              <div className="research-date">Accepted 11 Oct 2026</div>
+              <div className="research-date">Published 17 Oct 2026</div>
               <div className="research-content">
-                <span className="badge badge-completed">Accepted · In production</span>
+                <span className="badge badge-completed">Published · Open access</span>
                 <h4>Geometry-Aware Losses for Structurally Consistent Table Segmentation</h4>
-                <p><strong>First author: Dominik Hommer.</strong> Array, Elsevier. This article grew out of my bachelor thesis on geometry-aware learning for Vision Transformer-based table segmentation. Publication is being prepared; bibliographic details and the article link will be added when available.</p>
+                <p><strong>Dominik Hommer, Stefanie Vogl.</strong> Array, Volume 32 (2026), Article 101347. This first-author article grew out of my bachelor thesis on geometry-aware learning for Vision Transformer-based table segmentation. The loss improves region-level F1 by up to 9 percentage points over a BCE–Dice baseline without increasing inference cost.</p>
+                <p className="model-note">DOI: 10.1016/j.array.2026.101347 · Available online 17 October 2026 · CC BY 4.0</p>
+                <div className="hero-buttons">
+                  <a href="https://www.sciencedirect.com/science/article/pii/S2590005626006703" target="_blank" rel="noopener noreferrer" className="btn-primary">Read on ScienceDirect <FaExternalLinkAlt size={11} /></a>
+                  <a href="https://doi.org/10.1016/j.array.2026.101347" target="_blank" rel="noopener noreferrer" className="btn-secondary">DOI <FaExternalLinkAlt size={11} /></a>
+                  <a href="https://www.researchgate.net/publication/416121392_Geometry-aware_losses_for_structurally_consistent_table_segmentation" target="_blank" rel="noopener noreferrer" className="btn-secondary">Paper on ResearchGate <FaExternalLinkAlt size={11} /></a>
+                </div>
                 <div className="tags-row"><span className="tag tag-blue">Journal article</span><span className="tag">Table segmentation</span><span className="tag">Geometry-aware loss</span></div>
               </div>
             </article>
@@ -649,6 +658,7 @@ const Home = () => {
           <a href="https://www.linkedin.com/in/dominikhommer" target="_blank" rel="noopener noreferrer" className="footer-link">
             <SiLinkedin /> LinkedIn
           </a>
+          <a href="https://www.researchgate.net/profile/Dominik-Hommer" target="_blank" rel="noopener noreferrer" className="footer-link"><SiResearchgate /> ResearchGate</a>
           <a href="https://huggingface.co/patronus-studio" target="_blank" rel="noopener noreferrer" className="footer-link">Hugging Face</a>
           <a href="https://patronus.studio" target="_blank" rel="noopener noreferrer" className="footer-link">
             <img src={`${process.env.PUBLIC_URL}/Patronus_Logo_4096_4096.png`} alt="Patronus" style={{ width: 18, height: 18, objectFit: 'contain' }} /> Patronus
